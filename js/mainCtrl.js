@@ -7,7 +7,37 @@ app.controller('mainCtrl', function($scope, parseService){
   //The getParseData function will call the getData method on the parseService object. 
   //You'll then save the result of that request to 
   //your controllers $scope as messages ($scope.messages)
+/*
+////////////////////////////////////////////
+OTHER WAYS....................
 
+$scope.getParseData = function() {
+  parseService.getData().then(function(res) {
+    ////console.log(res);/////////console.log to test this foo
+    $scope.messages = res.data.results;
+  })
+}
+
+$scope.postData = function() {
+  var newObj = {
+    text: $scope.message;
+  };
+  parseService.postData();
+}
+
+$scope.postData = function() {
+  parseService.postData($scope.message).then(funciton(res) {
+    console.log(res);
+    if (res.status > 199 && res.status < 300) {
+      alert("doin fine"); ////////  TO CHECK FOR 200 message
+    }
+  })
+  $scope.message = '';
+}
+
+
+*/
+////////////////////////////////////////////
 $scope.getParseData = function() {
   parseService.getData().then(function(response) {
     $scope.messages = response;
