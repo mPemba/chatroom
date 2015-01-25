@@ -7,18 +7,21 @@ body {
   height: 95%;
   width: 100%;
   font-family: sans-serif;
-  background-image: url('http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+  background-image: url('http://idahocampgroundreview.com/outletrfbeachview.JPG');
+  background-repeat: no-repeat;
+  background-color: hsl(173, 11%, 45%);
 }
 
 .main-container {
   width: 75%;
   margin: 10px auto;
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.65);
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .main-container h1 {
+  font-family: 'Didot', serif;
   text-align: center;
 }
 
@@ -27,8 +30,12 @@ body {
   width: 40%;
 }
 
-p{
+p {
   text-align: center;
   margin: 3px 0;
   font-size: 17px;
+  font-family: 'Didot', serif;
+}
+p:hover {
+  font-weight: bold;
 }
